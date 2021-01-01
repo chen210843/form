@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+
+<body>
+  
+  <div class="container">
+     <div class="center ">
+        <img src="photo/mju.png" width="150" align="center"> 
+        <h5> คําร้องขอลาพักการศึกษา</h5>
+      </div>
+  <br>
+<form action="">
+      <div class="row">
+          <div class="col l7 m5 s1">
+          </div>
+        <div class="col l2 m3 s5">
+    <h5> วันเดือนปี</h5>
+    </div>
+      <div class="col l3 s6 m4"> 
+      <input type="date" required>
+    </div>
+  </div>
+    </form>
+  </div> 
+<p>
+  <form action="">
+  <div class="container">
+    <div class="row">
+      <div class="col l4 s12 m3">
+      <h5> เรื่อง ขอลาพักการศึกษาในภาคเรียนที่</h5>
+      </div>
+        <div class="input-field col l3 m3 s12" >
+          
+          <select class="browser-default">
+            <option value="" disabled selected>เลือก</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select>
+          <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems, options);
+          });
+        
+          // Or with jQuery
+        
+          $(document).ready(function(){
+            $('select').formSelect();
+          });
+          </script>
+        </div>
+    </form>
+      <form action="">
+       <div class="col l2 m3 s5 ">
+       <h5> ปีการศึกษาที่</h5>
+     </div>
+        <div class="col l3 m3 s7 ">
+        <input type="text" pattern="[0-9]{4}"  maxlength="4" required>
+      </div>
+     </div>
+    </form>
+ 
+    <form action="">
+      <div class="row">
+        <div class="col l2 m3 s12 ">
+ <h5>เรียน คณบดีคณะ </h5>
+</div>
+    <div class="input-field col l4 m3 s12" >
+          
+      <select class="browser-default">
+        <option value="" disabled selected>เลือก</option>
+        <option value="1">คณะบริหารธุรกิจ</option>
+        <option value="2">คณะวิทยาศาสตร์</option>
+        <option value="3">คณะผลิตกรรมการเกษตร</option>
+        <option value="4">คณะวิศวกรรมและอุตสาหกรรมเกษตร</option>
+        <option value="5">คณะเทคโนโลยีการประมงและทรัพยากรทางน้ำ</option>
+        <option value="6">คณะพัฒนาการท่องเที่ยว</option>
+        <option value="7">คณะศิลปศาสตร์</option>
+        <option value="8">คณะเศรษฐศาสตร์</option>
+        <option value="9">คณะสถาปัตยกรรมศาสตร์ และการออกแบบสิ่งแวดล้อม</option>
+        <option value="10">คณะสัตวศาสตร์และเทคโนโลยี</option>
+        <option value="11">คณะสารสนเทศและการสื่อสาร</option>
+        <option value="12">วิทยาลัยนานาชาติ</option>
+        <option value="13">วิทยาลัยพลังงานทดแทน</option>
+        <option value="14">วิทยาลัยบริหารศาสตร์</option>
+      </select>
+      <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('select');
+        var instances = M.FormSelect.init(elems, options);
+      });
+    
+      // Or with jQuery
+    
+      $(document).ready(function(){
+        $('select').formSelect();
+      });
+      </script>
+      </div>
+    </div>
+    
+  </form>
+  <form action="">
+    <div class="row">
+      <div class="col l1 m4 s3">
+        <h5>ข้าพเจ้า</h5>
+      </div>
+        <div class="input-field col l2 m5 s6" >
+          <select class="browser-default">
+            <option value="" disabled selected>เลือก</option>
+            <option value="1">นาย</option>
+            <option value="2">นางสาว</option>
+            <option value="2">นาง</option>
+          </select>
+        </div>
+        <div class="col l4 m6 s6">
+          <input type="text" name="fname" id="fname" pattern="[A-Za-z]" maxlength="20"  placeholder="ชื่อ" required>
+        </div>
+    
+      <div class="col l5 m6 s6">
+        <input type="text" name="lname" id="lname" pattern="[A-Za-z]" maxlength="20"  placeholder="นามสกุล" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col l2 m3 s6">
+      <h5>รหัสนักศึกษา</h5>
+      </div>
+      <div class="col l4 m3 s6">
+      <input type="text" name="idnt" id="idnt" pattern="[0-9]" maxlength="10" required>
+    </div>
+    <div class="col l2 m3 s6">
+      <h5>โทรศัพท์มือถือ</h5>
+    </div>
+    <div class="col l4 m3 s6">
+      <input type="tel" name="tel" id="tel" pattern="[0-9]" maxlength="10" required>
+    </div>
+    </div>
+  </form>
+  <form action="">
+    <div class="row">
+      <div class="col l3 m4 s12">
+  <h5>หลักสูตร ปริญญาตร</h5>
+</div>
+  <div class="input-field col l3 m4 s6" >
+    <select class="browser-default">
+      <option value="" disabled selected>เลือก</option>
+      <option value="1">4 ปี-5ปี</option>
+      <option value="2">4 ปี(เทียบเข้า)</option>
+    </select>
+  </div>
+  <div class="input-field col l3 m4 s6" >
+    <select class="browser-default">
+      <option value="" disabled selected>เลือก</option>
+      <option value="1">ภาคปกติ</option>
+      <option value="2">ภาคสมทบ</option>
+    </select>
+  </div>
+   </div>
+  </form>
+  <form action="">
+   <div class="row">
+   <div class="col l2 m2 s4">
+  <h5>สาขาวิชา</h5>
+   </div>
+   <div class="col l4 m4 s8">
+    <input type="text" name="maj" id="maj" pattern="[A-Za-z]" required >
+   </div>
+   <div class="col l1 m1 s2">
+    <h5>คณะ</h5>
+     </div>
+     <div class="col l5 m5 s10">
+      <input type="text" name="kana" id="kana" pattern="[A-Za-z]" required >
+     </div>
+   </div>
+</form>
+<form action="">
+  <div class="row">
+   <div class="col l12 m12 s12">
+    <h5>มีความประสงค์จะขอลาพักการศึกษา เนื่องจาก</h5>
+   </div>
+   <div class="col l12 m12 s12">
+    <input type="text" name="cause" id="cause" pattern="[A-Za-z][0-9]" required >
+   </div>
+  </div>
+</form>
+<h5>พร้อมนี้ได้แนบใบยินยอมขอลาพักการศึกษาจากผู้ปกครอง / ใบรับรองแพทย์ /เอกสารอื่นๆ</h5>
+<h5>จึงเรียนมาเพื่อโปรดพิจารณา</h5>
+<br><br>
+<div class="row">
+   <div class="col l8 m5 s4"></div>
+   <div class="col l4 m7 s8">
+     <h5> ขอแสดงความนับถือ </h5>
+   </div>
+  </div>
+
+<form action="">
+  <div class="row">
+    <div class="col l8 m5 s4">
+    </div>
+    <div class="col l4 m7 s8">
+    <input type="file" name="student" id="student" required>
+    </div>
+  </div>
+</form>
+<div class="row">
+  <div class="col l8 m5 s4"></div>
+  <div class="col l4 m7 s8">
+    <h5>นักศึกษา</h5>
+  </div>
+ </div>
+ <hr>
+ <form action="">
+    <div class="col l12 m12 s12">
+      <h5>(2) ความเห็นหัวหน้ากลุ้มภารกิจทะเบียนเรียน ประมวลผลฯ</h5>
+    </div>
+    <div class="row">
+      <div class="col l12 m12 s12">
+      <label>
+        <input type="checkbox" required>
+        <span>ทราบ นักศึกษาดังกล่าวสามารถลาพักการศึกษาได้</span>
+      </label>
+    </div>
+  </div>
+  <div class="row">
+  <div class="input-field col l5 m5 s12" >
+    <select class="browser-default">
+      <option value="" disabled selected>เลือก</option>
+      <option value="1">ภาคเรียนที่ 1</option>
+      <option value="2">ภาคเรียนที่ 2</option>
+    </select>
+  </div>
+</div>
+<input type="file" name="register" id="register" required>
+<h5>หัวหน้ากลุ่มภารกิจทะเบียนเรียน ประมวลผลฯ</h5>
+<div class="row">
+  <div class="col l3 m5 s12">
+<input type="date" required>
+</div></div>
+ </form>
+ <hr>
+ <form action="">
+  <div class="col l12 m12 s12">
+    <h5>(3) ความเห็นผู้อํานวยการสํานักบริหารและพัฒนาวิชาการ</h5>
+  </div>
+  <div class="row">
+    <div class="col l12 m12 s12">
+    <label>
+      <input type="checkbox" required>
+      <span>ทราบ</span>
+    </label>
+  </div>
+</div>
+<input type="file" name="manage" id="manage" required>
+<h5>ผู้อํานวยการสํานักบริหารและพัฒนาวิชาการ </h5>
+<div class="row">
+<div class="col l3 m5 s12">
+<input type="date"  required >
+</div></div>
+</form>
+<hr>
+<form action="">
+  <div class="col l12 m12 s12">
+    <h5>(4) ความเห็นอาจารย2ที่ปรึกษา</h5>
+  </div>
+  <div class="row">
+    <div class="col l12 m12 s12">
+    <label>
+      <input type="checkbox" required>
+      <span>ทราบ</span>
+    </label>
+  </div>
+</div>
+<input type="file" name="manage" id="manage" required>
+<h5>อาจารย์ที่ปรึกษา</h5>
+<div class="row">
+<div class="col l3 m5 s12">
+<input type="date"  required >
+</div></div>
+</form>
+<hr>
+<form action="">
+  <div class="col l12 m12 s12">
+    <h5>(5) ความเห็นประธานคณะกรรมการประจําหลักสูตร</h5>
+  </div>
+  <div class="row">
+    <div class="col l12 m12 s12">
+    <label>
+      <input type="checkbox" required>
+      <span>ทราบ</span>
+    </label>
+  </div>
+</div>
+<input type="file" name="manage" id="manage" required>
+<h5>ประธานคณะกรรมการประจําหลักสูตร</h5>
+<div class="row">
+<div class="col l3 m5 s12">
+<input type="date"  required >
+</div></div>
+</form>
+<hr>
+<form action="">
+  <div class="col l12 m12 s12">
+    <h5>ความเห็นคณบดี</h5>
+  </div>
+  <div class="row">
+    <div class="col l6 m6 s12">
+    <label>
+      <input type="checkbox" required>
+      <span>อนุมัติ</span>
+    </label>
+  </div>
+    <div class="col l6 m6 s12">
+      <label>
+        <input type="checkbox" required>
+        <span>ไม่อนุมัติ</span>
+      </label>
+  </div>
+
+  </div>
+<input type="file" name="manage" id="manage" required>
+<h5>คณบดี</h5>
+<div class="row">
+<div class="col l3 m5 s12">
+<input type="date"  required >
+</div></div>
+</form>
+<hr>
+<form action="">
+  <div class="col l12 m12 s12">
+    <h5>(7) งานเงินรายได้ กองคลัง ชั้น 2 อาคารอิงคศรีกสิการได้รับชําระเงินจํานวน </h5>
+  </div>
+  <div class="row">
+    <div class="col l6 m6 s12">
+    <label>
+      <input type="checkbox" required>
+      <span>ภาคเรียนที่ 1 1,200 บาท </span>
+    </label>
+  </div>
+    <div class="col l6 m6 s12">
+      <label>
+        <input type="checkbox" required>
+        <span>ภาคเรียนที่ 2 1,000 บาท</span>
+      </label>
+  </div>
+
+  </div>
+<input type="file" name="manage" id="manage" required>
+<h5>ผู้รับเงิน</h5>
+<div class="row">
+<div class="col l3 m5 s12">
+<input type="date"  required >
+</div></div>
+</form>
+<hr>
+<br>
+<h5>(8) ส่งเอกสารคําร้องขอลาพักการศึกษาตัวจริง ให้กลุ่มภารกิจ
+  ทะเบียนฯชั้น 2 อาคารอํานวย ยศสุข เพื่อบันทึกคําร้องขอลาพัก
+  การศึกษา และให้นักศึกษาเก็บหลักฐานใบเสร็จที่ชําระเงินไว้
+  เพื่อตรวจสอบการบันทึกการลาพักการศึกษา </h5>
+  <br>
+  <hr>
+  <form action="">
+    <div class="row">
+    <div class="col l8 m12 s12">
+      <h5>(9) สําหรับเจ้าหน้าที่บันทึกลงฐานข้อมูล ได้บันทึกการข้อมูล
+        ดังกล่าว ในวันที่ </h5>
+      </div> 
+     <div class="col l4 m5 s12">
+          <input type="date"  required >
+          </div>
+        
+    </div>
+  <input type="file" name="manage" id="manage" required>
+  <h5>เจ้าหน้าที่บันทึก</h5>
+  <div class="row">
+  <div class="col l3 m5 s12">
+  <input type="date"  required >
+  </div></div>
+  </form>
+<br>
+<hr>
+<br>
+<div class="center ">
+  <h5>คํารับรองของผู้ปกครอง</h5>
+</div>
+<br>
+<form>
+  <div class="row">
+   <div class="col l2 m2 s4">
+     <h5>บ้านเลขที่</h5>
+   </div>
+   <div class="col l2 m4 s8">
+     <input type="text" name="number" id="number" pattern="[0-9][/]"  maxlength="10" required>
+  </div>
+  <div class="col l1 m1 s3">
+    <h5>หมู่ที่</h5>
+ </div> <div class="col l2 m5 s9">
+  <input type="text" name="swine" id="swine" pattern="[0-9]"  maxlength="5" required>
+</div>
+<div class="col l1 m2 s2">
+  <h5>ตำบล</h5>
+</div> <div class="col l4 m4 s10">
+<input type="text" name="tb" id="tb" pattern="[A-Za-z]"  maxlength="20" required>
+</div>
+
+  <div class="col l1 m2 s4">
+     <h5>อำเภอ</h5>
+  </div>
+<div class="col l5 m4 s8">
+  <input type="text" name="Dt" id="Dt"pattern="[A-Za-z]" maxlength="20" required >
+</div>
+<div class="col l1 m2 s4">
+  <h5>จังหวัด</h5>
+</div>
+<div class="col l5 m4 s8">
+  <input type="text" name="pv" id="pv"pattern="[A-Za-z]" maxlength="20" required >
+</div>
+
+  <div class="col l2 m3 s5">
+     <h5>รหัสไปรษณีย์</h5>
+  </div>
+<div class="col l4 m3 s7">
+  <input type="text" name="pf" id="pf"pattern="[A-Za-z]" maxlength="20" required >
+</div>
+<div class="col l1 m2 s4">
+  <h5>โทรศัพท์</h5>
+</div>
+<div class="col l5 m5 s8">
+  <input type="tel" name="sp" id="sp"pattern="[0-9]" maxlength="10" required >
+</div>
+</div>
+</form>
+
+
+<form action="">
+<div class="row">
+  <div class="col l8 m3 s1">
+
+  </div>
+  <div class="col l2 m3 s5">
+<h5> วันเดือนปี</h5>
+</div>
+<div class="col l2 s6 m6"> 
+<input type="date" required>
+</div>
+</div>
+</form>
+ <hr>
+
+<form action="">
+<div class="row">
+<div class="col l6 s12 m8">
+<h5> เรื่อง ยินยอมให้นักศึกษาลาพักการศึกษา ในภาคเรียนที่</h5>
+</div>
+  <div class="input-field col l6 m4 s12" >
+    
+    <select class="browser-default">
+      <option value="" disabled selected>เลือก</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+    </select>
+  </div> 
+</div>
+</form>
+<form action="">
+  <div class="row">
+ <div class="col l2 m4 s5 ">
+ <h5> ปีการศึกษาที่</h5>
+</div>
+  <div class="col l3 m3 s7 ">
+  <input type="text" pattern="[0-9]"  maxlength="4" required>
+</div>
+</div>
+
+</form>
+
+
+<form action="">
+<div class="row">
+  <div class="col l3 m3 s12 ">
+<h5>เรียน คณบดีคณะ </h5>
+</div>
+<div class="input-field col l9 m9 s12" >
+    
+<select class="browser-default">
+  <option value="" disabled selected>เลือก</option>
+  <option value="1">คณะบริหารธุรกิจ</option>
+  <option value="2">คณะวิทยาศาสตร์</option>
+  <option value="3">คณะผลิตกรรมการเกษตร</option>
+  <option value="4">คณะวิศวกรรมและอุตสาหกรรมเกษตร</option>
+  <option value="5">คณะเทคโนโลยีการประมงและทรัพยากรทางน้ำ</option>
+  <option value="6">คณะพัฒนาการท่องเที่ยว</option>
+  <option value="7">คณะศิลปศาสตร์</option>
+  <option value="8">คณะเศรษฐศาสตร์</option>
+  <option value="9">คณะสถาปัตยกรรมศาสตร์ และการออกแบบสิ่งแวดล้อม</option>
+  <option value="10">คณะสัตวศาสตร์และเทคโนโลยี</option>
+  <option value="11">คณะสารสนเทศและการสื่อสาร</option>
+  <option value="12">วิทยาลัยนานาชาติ</option>
+  <option value="13">วิทยาลัยพลังงานทดแทน</option>
+  <option value="14">วิทยาลัยบริหารศาสตร์</option>
+</select>
+</div>
+</div>
+</form>
+<form action="">
+<div class="row">
+<div class="col l1 m2 s3">
+  <h5>ตามที่</h5>
+</div>
+  <div class="input-field col l2 m5 s6" >
+    <select class="browser-default">
+      <option value="" disabled selected>เลือก</option>
+      <option value="1">นาย</option>
+      <option value="2">นางสาว</option>
+      <option value="3">นาง</option>
+    </select>
+  </div>
+  <div class="col l4 m6 s6">
+    <input type="text" name="fname" id="fname" pattern="[A-Za-z]" maxlength="20"  placeholder="ชื่อ" required>
+  </div>
+
+<div class="col l5 m6 s6">
+  <input type="text" name="lname" id="lname" pattern="[A-Za-z]" maxlength="20"  placeholder="นามสกุล" required>
+</div>
+</div>
+<div class="row">
+<div class="col l2 m3 s6">
+<h5>รหัสนักศึกษา</h5>
+</div>
+<div class="col l4 m3 s6">
+<input type="text" name="idnt" id="idnt" pattern="[0-9]" maxlength="10" required>
+</div>
+<div class="col l2 m3 s6">
+<h5>โทรศัพท์มือถือ</h5>
+</div>
+<div class="col l4 m3 s6">
+<input type="tel" name="tel" id="tel" pattern="[0-9]" maxlength="10" required>
+</div>
+</div>
+</form>
+<form action="">
+<div class="row">
+<div class="col l3 m4 s12">
+<h5>หลักสูตร ปริญญาตร</h5>
+</div>
+<div class="input-field col l3 m3 s6" >
+<select class="browser-default">
+<option value="" disabled selected>เลือก</option>
+<option value="1">4 ปี-5ปี</option>
+<option value="2">4 ปี(เทียบเข้า)</option>
+</select>
+</div>
+<div class="input-field col l3 m3 s6" >
+<select class="browser-default">
+<option value="" disabled selected>เลือก</option>
+<option value="1">ภาคปกติ</option>
+<option value="2">ภาคสมทบ</option>
+</select>
+</div>
+</div>
+</form>
+<form action="">
+<div class="row">
+<div class="col l2 m2 s4">
+<h5>สาขาวิชา</h5>
+</div>
+<div class="col l4 m4 s8">
+<input type="text" name="maj" id="maj" pattern="[A-Za-z]" required >
+</div>
+<div class="col l1 m1 s2">
+<h5>คณะ</h5>
+</div>
+<div class="col l5 m5 s10">
+<input type="text" name="kana" id="kana" pattern="[A-Za-z]" required >
+</div>
+</div>
+</form>
+<form action="">
+<div class="row">
+<div class="col l10 m12 s12">
+<h5>ซึ่งเป็นนักศึกษาในความปกครองของข้าพเจ้ามีความประสงค์จะขอลาพักการศึกษา ในภาคเรียนที่</h5>
+</div>
+<div class="input-field col l2 m3 s12" >
+    <select class="browser-default">
+    <option value="" disabled selected>เลือก</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+  </select>
+</div></div>
+ <div class="row">
+<div class="col l2 m3 s5">
+  <h5> ปีการศึกษาที่</h5>
+ </div>
+   <div class="col l3 m3 s7 ">
+   <input type="text" pattern="[0-9]"  maxlength="4" required>
+ </div>
+</div>
+</form>
+<form action="">
+  <div class="row">
+    <div class="col l2 m2 s3">
+  <h5>เนื่องจาก</h5>
+   </div>
+   <div class="col l10 m10 s9">
+    <input type="text" name="cause1" id="cause1" required >
+   </div>
+</div>
+</form>
+<form action="">
+  <div class="row">
+  <div class="col l1 m2 s3">
+    <h5>ข้าพเจ้า</h5>
+  </div>
+    <div class="input-field col l2 m5 s9" >
+      <select class="browser-default">
+        <option value="" disabled selected>เลือก</option>
+        <option value="1">นาย</option>
+        <option value="2">นางสาว</option>
+        <option value="3">นาง</option>
+      </select>
+    </div>
+    <div class="col l4 m6 s6">
+      <input type="text" name="fname1" id="fname2" pattern="[A-Za-z]" maxlength="20"  placeholder="ชื่อ" required>
+    </div>
+  
+  <div class="col l5 m6 s6">
+    <input type="text" name="lname1" id="lname1" pattern="[A-Za-z]" maxlength="20"  placeholder="นามสกุล" required>
+  </div>
+  </div>
+  <h5>ผู้ปกครองของนักศึกษาดังกล่าวข้างต้น ได้รับทราบการขอลาพักการศึกษาแล้ว และยินดีให้ปฏิบัติตามความประสงค์ของนักศึกษา</h5>
+<h5>จึงเรียนมาเพื่อโปรดทราบ</h5>
+<div class="row">
+   <div class="col l8 m5 s4"></div>
+   <div class="col l4 m7 s8">
+     <h5> ขอแสดงความนับถือ </h5>
+   </div>
+  </div>
+
+<form action="">
+  <div class="row">
+    <div class="col l8 m5 s4">
+    </div>
+    <div class="col l4 m7 s8">
+    <input type="file" name="studentPr" id="studentPr" required>
+    </div>
+  </div>
+</form>
+<div class="row">
+  <div class="col l8 m5 s4"></div>
+  <div class="col l4 m7 s8">
+    <h5>ผู้ปกครองของนักศึกษา</h5>
+  </div>
+ </div>
+ <br>
+ <br>
+ <br>
+ <br>
+ <hr>
+ <br>
+ <h5>ขั้นตอนการเสนอคําร้องลาพักการศึกษา</h5>
+ <h6>1. นักศึกษากรอกคําร้องขอลาพักการศึกษา </h6>
+ <h6>2. เสนอคําร้องต่อหัวหน้ากลุ่มภารกิจทะเบียนเรียน ประมวลผลฯ</h6>
+ <h6>3. เสนอคําร้องต่อผู้อํานวยการสํานักบริหารและพัฒนาวิชาการ (ชั้น 3 อาคารอํานวย ยศสุข)</h6>
+ <h6>4. เสนอคําร้องต่ออาจารย์ที่ปรึกษา (คณะที่นักศึกษาสังกัด)</h6>
+ <h6>5. เสนอคําร้องต่อประธานคณะกรรมการประจําหลักสูตร (คณะที่นักศึกษาสังกัด) </h6>
+ <h6>6. เสนอคําร้องต่อคณบดี เพื่ออนุมัติ (คณะที่นักศึกษาสังกัด) </h6>
+ <h6>7. นําคําร้องไปชําระเงิน (กองคลัง ชั้น 2 อาคารอิงคศรีกสิการ) </h6>
+ <h6>8. นําคําร้องขอลาพักการศึกษา ที่ชําระเงินแล้ว (ยื่นต่อกลุ่มภารกิจทะเบียนเรียนฯ) เพื่อบันทึกฐานข้อมูลนักศึกษาต่อไป </h6>
+ <h6>9. เจ้าหน้าที่ทะเบียนฯ บันทึกลงฐานข้อมูล นักศึกษาสามารถตรวจสอบได้ในวันต่อไป </h6>
+ <br><br><br><br><br><br>
+</body>
+
+</html>
